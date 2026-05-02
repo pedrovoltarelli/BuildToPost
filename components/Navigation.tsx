@@ -61,7 +61,7 @@ export function Navigation() {
             <div className="w-7 h-7 bg-zinc-800 rounded-md flex items-center justify-center">
               <Terminal className="w-4 h-4 text-zinc-300" />
             </div>
-            <span className="font-medium text-zinc-50 hidden sm:block">CreatorDev AI</span>
+            <span className="font-medium text-zinc-50 hidden sm:block">BuildToPost</span>
           </Link>
           
           <div className="hidden md:flex items-center gap-1">

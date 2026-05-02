@@ -10,7 +10,7 @@ export default function RegisterPage() {
           <div className="bg-gray-900/80 backdrop-blur-md rounded-2xl border border-gray-800/50 p-8 space-y-6">
             <div className="text-center">
               <h1 className="text-3xl font-bold text-white mb-2">Create Your Account</h1>
-              <p className="text-gray-400">Join the CreatorDev AI community</p>
+              <p className="text-gray-400">Join the BuildToPost community</p>
             </div>
             
             <form className="space-y-4">

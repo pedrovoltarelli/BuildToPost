@@ -7,7 +7,7 @@ import { AuthProvider } from "@/contexts/AuthContext";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "CreatorDev AI - Turn Your Builds Into Content",
+  title: "BuildToPost - Turn Your Builds Into Content",
   description: "Convert your daily progress into ready-to-publish content for social media, newsletters and devlogs.",
 };
 

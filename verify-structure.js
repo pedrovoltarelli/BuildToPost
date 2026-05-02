@@ -34,7 +34,7 @@ const requiredDirectories = [
   'styles',
 ];
 
-console.log('\n🔍 Verifying CreatorDev AI Project Structure\n');
+console.log('\n🔍 Verifying BuildToPost Project Structure\n');
 
 let allGood = true;
 
@@ -66,7 +66,7 @@ configFiles.forEach(file => {
 console.log('\n' + '='.repeat(50));
 if (allGood) {
   console.log('✅ All required files and directories are present!');
-  console.log('\n🎉 CreatorDev AI is ready to launch!');
+  console.log('\n🎉 BuildToPost is ready to launch!');
   process.exit(0);
 } else {
   console.log('❌ Some required files are missing.');

@@ -1,4 +1,4 @@
-# CreatorDev AI - Project Summary
+# BuildToPost - Project Summary
 
 ## What Was Created
 

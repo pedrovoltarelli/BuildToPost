@@ -1,4 +1,4 @@
-# CreatorDev AI
+# BuildToPost
 
 A modern SaaS platform for developers, indie hackers, freelancers, and tech creators that turns daily product progress into ready-to-publish content automatically.
 

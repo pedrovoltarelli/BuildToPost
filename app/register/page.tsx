@@ -96,7 +96,7 @@ export default function RegisterPage() {
             </div>
             <h2 className="text-4xl font-bold text-white mb-4">
               Join<br />
-              <span className="text-violet-400">CreatorDev AI</span>
+              <span className="text-violet-400">BuildToPost</span>
             </h2>
             <p className="text-zinc-400 text-lg leading-relaxed max-w-md">
               Transform your daily builds into engaging content that grows your audience.

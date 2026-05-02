@@ -47,7 +47,7 @@ export default function Home() {
             </h1>
             
             <p className="text-xl text-zinc-400 mb-12 max-w-xl mx-auto leading-relaxed">
-              Stop building in silence. CreatorDev AI converts your daily progress into ready-to-publish content for social media and newsletters.
+              Stop building in silence. BuildToPost converts your daily progress into ready-to-publish content for social media and newsletters.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -119,10 +119,10 @@ export default function Home() {
           <div className="max-w-4xl mx-auto px-6">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-semibold text-zinc-50 mb-4">
-                About CreatorDev AI
+                About BuildToPost
               </h2>
               <p className="text-zinc-400 text-lg leading-relaxed">
-                CreatorDev AI helps indie hackers and developers turn their daily builds into engaging content. 
+                BuildToPost helps indie hackers and developers turn their daily builds into engaging content. 
                 Connect your GitHub repository and let AI generate tweets, LinkedIn posts, newsletters and devlogs 
                 about your progress.
               </p>
@@ -154,7 +154,7 @@ export default function Home() {
         <footer className="py-8 border-t border-white/5">
           <div className="max-w-6xl mx-auto px-6 text-center">
             <p className="text-zinc-600 text-sm">
-              © 2026 CreatorDev AI. Built for indie hackers and developers.
+              © 2026 BuildToPost. Built for indie hackers and developers.
             </p>
           </div>
         </footer>
