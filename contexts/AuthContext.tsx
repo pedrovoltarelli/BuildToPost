@@ -1,7 +1,7 @@
 "use client";
 
 import { createContext, useContext, useState, useEffect, ReactNode } from "react";
-import { User as SupabaseUser, AuthError } from "@supabase/supabase-js";
+import { User as SupabaseUser, AuthError, AuthChangeEvent } from "@supabase/supabase-js";
 import { getSupabase } from "@/lib/supabase";
 
 interface User {
@@ -57,7 +57,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       setIsLoading(false);
     });
 
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((event: AuthChangeEvent, session) => {
+      // @ts-ignore - TOKEN_REFRESH_FAILED exists in runtime but not in current type
       if (event === 'TOKEN_REFRESH_FAILED') {
         console.error('Token refresh failed, signing out');
         supabase.auth.signOut();
