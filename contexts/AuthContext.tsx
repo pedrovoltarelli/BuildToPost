@@ -32,7 +32,14 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     const supabase = getSupabase();
     if (!supabase) return;
     
-    supabase.auth.getSession().then(({ data: { session } }) => {
+    supabase.auth.getSession().then(({ data: { session }, error }) => {
+      if (error) {
+        console.error('Auth session error:', error.message);
+        supabase.auth.signOut();
+        setUser(null);
+        setIsLoading(false);
+        return;
+      }
       if (session?.user) {
         const savedUser = localStorage.getItem("user");
         const localData = savedUser ? JSON.parse(savedUser) : null;
@@ -50,7 +57,14 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       setIsLoading(false);
     });
 
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
+      if (event === 'TOKEN_REFRESH_FAILED') {
+        console.error('Token refresh failed, signing out');
+        supabase.auth.signOut();
+        localStorage.removeItem("user");
+        setUser(null);
+        return;
+      }
       if (session?.user) {
         const savedUser = localStorage.getItem("user");
         const localData = savedUser ? JSON.parse(savedUser) : null;
